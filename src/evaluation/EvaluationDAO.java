@@ -42,6 +42,7 @@ public class EvaluationDAO {
             try {if (rs != null)rs.close();} catch (SQLException e) {e.printStackTrace();}
         }
         return -1; // 데이터베이스 오류
+        
     }
     
     public ArrayList<EvaluationDTO> getList(String lectureDivide, String searchType, String search, int pageNumber) {
